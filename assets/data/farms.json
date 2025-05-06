@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Green Valley Family Farm",
+    "name": "Green Valley Family Farms",
     "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1",
     "rating": 4.8,
     "deliveryFee": 2.50,
@@ -112,6 +112,166 @@
         "quantityAvailable": 25,
         "storageInstructions": "Remove tops and store in crisper drawer",
         "farmerNotes": "Grown in mineral-rich soil"
+      },
+      {
+        "id": "p11",
+        "name": "Rainbow Swiss Chard",
+        "description": "Vibrant, multicolored stems with tender dark green leaves. Perfect for sautéing or adding to soups.",
+        "price": 3.99,
+        "unit": "bunch",
+        "image": "https://example.com/swiss-chard.jpg"
+      },
+      {
+        "id": "p12",
+        "name": "Purple Bell Peppers",
+        "description": "Sweet and crisp peppers with a beautiful purple hue. Rich in antioxidants.",
+        "price": 4.50,
+        "unit": "lb",
+        "image": "https://example.com/purple-pepper.jpg"
+      },
+      {
+        "id": "p13",
+        "name": "Romanesco Broccoli",
+        "description": "Stunning fractal-patterned vegetable with a nutty, delicate flavor.",
+        "price": 5.99,
+        "unit": "head",
+        "image": "https://example.com/romanesco.jpg"
+      },
+      {
+        "id": "p14",
+        "name": "Golden Beets",
+        "description": "Sweet and earthy golden beets, perfect for roasting or salads.",
+        "price": 3.99,
+        "unit": "bunch",
+        "image": "https://example.com/golden-beets.jpg"
+      },
+      {
+        "id": "p15",
+        "name": "Lacinato Kale",
+        "description": "Also known as Dinosaur Kale, these dark leaves are perfect for kale chips or salads.",
+        "price": 2.99,
+        "unit": "bunch",
+        "image": "https://example.com/lacinato-kale.jpg"
+      },
+      {
+        "id": "p16",
+        "name": "Watermelon Radish",
+        "description": "Beautiful pink interior with a mild, peppery flavor. Great for salads and garnishes.",
+        "price": 4.99,
+        "unit": "lb",
+        "image": "https://example.com/watermelon-radish.jpg"
+      },
+      {
+        "id": "p17",
+        "name": "Purple Asparagus",
+        "description": "Tender purple spears with a sweeter flavor than green asparagus.",
+        "price": 6.99,
+        "unit": "bunch",
+        "image": "https://example.com/purple-asparagus.jpg"
+      },
+      {
+        "id": "p18",
+        "name": "Easter Egg Radishes",
+        "description": "Colorful mix of pink, purple, and white radishes with a crisp, peppery taste.",
+        "price": 2.99,
+        "unit": "bunch",
+        "image": "https://example.com/easter-egg-radish.jpg"
+      },
+      {
+        "id": "p19",
+        "name": "Garlic Scapes",
+        "description": "Curly green garlic shoots with a mild, fresh garlic flavor.",
+        "price": 3.50,
+        "unit": "bunch",
+        "image": "https://example.com/garlic-scapes.jpg"
+      },
+      {
+        "id": "p20",
+        "name": "Patty Pan Squash",
+        "description": "Flying saucer-shaped summer squash with a tender texture.",
+        "price": 3.99,
+        "unit": "lb",
+        "image": "https://example.com/patty-pan.jpg"
+      },
+      {
+        "id": "p21",
+        "name": "Japanese Eggplant",
+        "description": "Long, slender eggplants with tender flesh and few seeds.",
+        "price": 4.50,
+        "unit": "lb",
+        "image": "https://example.com/japanese-eggplant.jpg"
+      },
+      {
+        "id": "p22",
+        "name": "Sunchokes",
+        "description": "Also known as Jerusalem artichokes, these knobby tubers have a nutty flavor.",
+        "price": 5.99,
+        "unit": "lb",
+        "image": "https://example.com/sunchokes.jpg"
+      },
+      {
+        "id": "p23",
+        "name": "Purple Kohlrabi",
+        "description": "Purple-skinned bulbs with crisp, sweet flesh. Great raw or cooked.",
+        "price": 3.99,
+        "unit": "lb",
+        "image": "https://example.com/kohlrabi.jpg"
+      },
+      {
+        "id": "p24",
+        "name": "Hakurei Turnips",
+        "description": "Sweet Japanese turnips that can be eaten raw or cooked.",
+        "price": 4.50,
+        "unit": "bunch",
+        "image": "https://example.com/hakurei-turnips.jpg"
+      },
+      {
+        "id": "p25",
+        "name": "Tomatillos",
+        "description": "Green husked fruits perfect for salsa verde and Mexican dishes.",
+        "price": 3.99,
+        "unit": "lb",
+        "image": "https://example.com/tomatillos.jpg"
+      },
+      {
+        "id": "p26",
+        "name": "Dandelion Greens",
+        "description": "Nutrient-rich bitter greens, excellent for salads and sautéing.",
+        "price": 2.99,
+        "unit": "bunch",
+        "image": "https://example.com/dandelion-greens.jpg"
+      },
+      {
+        "id": "p27",
+        "name": "Lemon Cucumbers",
+        "description": "Round, yellow cucumbers with a mild, sweet flavor.",
+        "price": 3.99,
+        "unit": "lb",
+        "image": "https://example.com/lemon-cucumber.jpg"
+      },
+      {
+        "id": "p28",
+        "name": "Purple Pod Beans",
+        "description": "Beautiful purple string beans that turn green when cooked.",
+        "price": 4.99,
+        "unit": "lb",
+        "image": "https://example.com/purple-beans.jpg"
+      },
+      {
+        "id": "p29",
+        "name": "Celeriac",
+        "description": "Knobby root vegetable with a delicate celery flavor.",
+        "price": 4.50,
+        "unit": "lb",
+        "image": "https://example.com/celeriac.jpg"
+      },
+      {
+        "id": "p30",
+        "name": "Red Russian Kale",
+        "description": "Tender kale variety with purple stems and grey-green leaves.",
+        "price": 2.99,
+        "unit": "bunch",
+        "image": "https://example.com/red-russian-kale.jpg"
       }
     ]
   },

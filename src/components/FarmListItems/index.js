@@ -8,15 +8,18 @@ const FarmListItems = ({ produce }) => {
     return (
         <View style={styles.container}>
             <View style={styles.contentContainer}>
-                <Text style={styles.name}>{produce.name}</Text>
-                <Text style={styles.description} numberOfLines={2}>{produce.description}</Text>
-                <Text style={styles.price}>${produce.price}/{produce.unit}</Text>
+                <View>
+                    <Text style={styles.name}>{produce.name}</Text>
+                    <Text style={styles.description} numberOfLines={2}>{produce.description}</Text>
+                    <Text style={styles.price}>${produce.price}/{produce.unit}</Text>
+                </View>
             </View>
-            <Image 
-                source={{ uri: produce.image }} 
-                style={styles.image}
-                resizeMode="cover"
-            />
+            <View style={styles.imageContainer}>
+                <Image 
+                    source={{ uri: produce.image }} 
+                    style={styles.image}
+                />
+            </View>
         </View>
     );
 };
@@ -37,20 +40,29 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         elevation: 2,
     },
+    imageContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     image: {
         width: 75,
-        height: 75,
+        height: 50,
         borderRadius: 8,
         marginLeft: 16,
     },
     contentContainer: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
     },
     name: {
         fontSize: 16,
         fontFamily: 'RobotoMedium',
         color: '#333',
+        marginBottom: 4,
+    },
+    type: {
+        fontSize: 14,
+        color: '#666',
         marginBottom: 4,
     },
     description: {
