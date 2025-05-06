@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "1",
+    "name": "Green Valley Family Farm",
+    "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1",
+    "rating": 4.8,
+    "deliveryFee": 2.50,
+    "minDeliveryTime": 15,
+    "maxDeliveryTime": 30,
+    "description": "Family-owned organic farm specializing in heirloom varieties and sustainable farming practices.",
+    "location": "Sonoma Valley, CA",
+    "certifications": ["USDA Organic", "California Certified Organic Farmers"],
+    "produce": [
+      {
+        "id": "p1",
+        "name": "Pineberry Strawberry",
+        "category": "Fruit",
+        "type": "Strawberry",
+        "image": "https://images.unsplash.com/photo-1543528176-61b239494933?q=80&w=1000&auto=format&fit=crop",
+        "price": 8.99,
+        "unit": "pint",
+        "description": "Unique white strawberry variety with red seeds, featuring a tropical pineapple-like flavor.",
+        "datePicked": "2024-05-05",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "May-September",
+        "quantityAvailable": 25,
+        "storageInstructions": "Refrigerate immediately, best consumed within 5 days",
+        "farmerNotes": "Morning harvested at peak ripeness"
+      },
+      {
+        "id": "p2",
+        "name": "Heirloom Tomatoes",
+        "category": "Vegetable",
+        "type": "Tomato",
+        "image": "https://images.unsplash.com/photo-1598512752271-33f913a5af13?q=80&w=1000&auto=format&fit=crop",
+        "price": 6.99,
+        "unit": "lb",
+        "description": "Mix of Cherokee Purple, Brandywine, and Green Zebra varieties.",
+        "datePicked": "2024-05-05",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "June-September",
+        "quantityAvailable": 30,
+        "storageInstructions": "Store at room temperature, avoid refrigeration",
+        "farmerNotes": "Vine-ripened, hand-selected"
+      },
+      {
+        "id": "p3",
+        "name": "Rainbow Swiss Chard",
+        "category": "Leafy Greens",
+        "type": "Chard",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+        "price": 4.99,
+        "unit": "bunch",
+        "description": "Vibrant stems in yellow, pink, and red with tender dark green leaves.",
+        "datePicked": "2024-05-05",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "Year-round",
+        "quantityAvailable": 15,
+        "storageInstructions": "Store in plastic bag in crisper drawer",
+        "farmerNotes": "Fresh cut this morning"
+      },
+      {
+        "id": "p4",
+        "name": "Purple Asparagus",
+        "category": "Vegetable",
+        "type": "Asparagus",
+        "image": "https://images.unsplash.com/photo-1551629000-80f13ce76da7?q=80&w=1000&auto=format&fit=crop",
+        "price": 7.99,
+        "unit": "bunch",
+        "description": "Tender purple asparagus spears with a sweet, nutty flavor.",
+        "datePicked": "2024-05-06",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "April-June",
+        "quantityAvailable": 20,
+        "storageInstructions": "Stand upright in water and refrigerate",
+        "farmerNotes": "Early morning harvest"
+      },
+      {
+        "id": "p5",
+        "name": "Organic Mixed Salad Greens",
+        "category": "Leafy Greens",
+        "type": "Mixed Greens",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+        "price": 5.99,
+        "unit": "bag",
+        "description": "Fresh mix of baby lettuce, arugula, and spinach.",
+        "datePicked": "2024-05-06",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "Year-round",
+        "quantityAvailable": 40,
+        "storageInstructions": "Keep refrigerated in sealed bag",
+        "farmerNotes": "Triple washed and ready to eat"
+      },
+      {
+        "id": "p6",
+        "name": "Watermelon Radishes",
+        "category": "Root Vegetable",
+        "type": "Radish",
+        "image": "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=1000&auto=format&fit=crop",
+        "price": 4.49,
+        "unit": "bunch",
+        "description": "Beautiful pink interior with crisp, mild flavor.",
+        "datePicked": "2024-05-06",
+        "daysSincePicked": 0,
+        "inSeason": true,
+        "seasonalWindow": "Spring-Fall",
+        "quantityAvailable": 25,
+        "storageInstructions": "Remove tops and store in crisper drawer",
+        "farmerNotes": "Grown in mineral-rich soil"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Sunflower Ridge Farm",
+    "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1",
+    "rating": 4.9,
+    "deliveryFee": 3.00,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 35,
+    "description": "Specializing in rare and heirloom fruit varieties using regenerative farming practices.",
+    "location": "Napa Valley, CA",
+    "certifications": ["USDA Organic", "Regenerative Organic Certified"],
+    "produce": [
+      {
+        "id": "s3",
+        "name": "Mara des Bois Strawberry",
+        "image": "https://images.unsplash.com/photo-1518635017480-d9d458143a41",
+        "price": 7.99,
+        "unit": "pint",
+        "description": "French variety known for intense flavor and strong aroma of wild strawberries.",
+        "inSeason": true,
+        "harvestDate": "2024-05-01",
+        "category": "Fruit",
+        "type": "Strawberry"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Underwood Family Farms",
+    "description": "Multi-generational family farm known for their educational programs and seasonal events.",
+    "location": "Ventura, CA",
+    "address": {
+      "street": "3370 Sunset Valley Road",
+      "city": "Ventura",
+      "state": "CA",
+      "zipCode": "93003",
+      "coordinates": {
+        "latitude": 34.2778,
+        "longitude": -119.2482
+      }
+    },
+    "contact": {
+      "phone": "805-555-0345",
+      "email": "info@underwoodfarms.com",
+      "website": "www.underwoodfarms.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "Food Alliance Certified"
+    ],
+    "growing_methods": [
+      "Traditional",
+      "Integrated Pest Management"
+    ],
+    "season_info": {
+      "growing_seasons": ["Spring", "Summer", "Fall", "Winter"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-17:00",
+        "sunday": "8:00-17:00"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Apple Pay"
+    ],
+    "established_year": 1948,
+    "size_acres": 160,
+    "specialties": [
+      "Sweet Corn",
+      "Farm Fresh Eggs",
+      "Seasonal Squash"
+    ],
+    "deliveryFee": 1.4,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 30,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Sweet Corn",
+        "description": "Fresh picked sweet corn. 6 ears.",
+        "price": 5.9
+      },
+      {
+        "name": "Farm Fresh Eggs",
+        "description": "Free-range organic eggs. 1 dozen.",
+        "price": 7.0
+      },
+      {
+        "name": "Heirloom Bean Mix",
+        "description": "Mix of dried heirloom beans. 1lb bag.",
+        "price": 5.9
+      },
+      {
+        "name": "Brussels Sprouts",
+        "description": "Fresh brussels sprouts on the stalk. 2lb.",
+        "price": 5.9
+      },
+      {
+        "name": "Seasonal Squash Mix",
+        "description": "Variety of seasonal squash. 3lb bag.",
+        "price": 5.2
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Apricot Lane Farms",
+    "description": "A regenerative organic farm focused on biodiversity and soil health.",
+    "location": "Camarillo, CA",
+    "address": {
+      "street": "1072 Apricot Lane",
+      "city": "Camarillo",
+      "state": "CA",
+      "zipCode": "93012",
+      "coordinates": {
+        "latitude": 34.2223,
+        "longitude": -119.0168
+      }
+    },
+    "contact": {
+      "phone": "805-555-0446",
+      "email": "info@apricotlanefarms.com",
+      "website": "www.apricotlanefarms.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "Regenerative Organic Certified"
+    ],
+    "growing_methods": [
+      "Regenerative",
+      "Biodynamic"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 2011,
+    "size_acres": 214,
+    "specialties": [
+      "Fresh Apricots",
+      "Avocado Bag",
+      "Raw Honey"
+    ],
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Fresh Apricots",
+        "description": "Sweet, tree-ripened apricots. 2lb box.",
+        "price": 8.9
+      },
+      {
+        "name": "Avocado Bag",
+        "description": "Fresh California avocados. 4 count bag.",
+        "price": 7.9
+      },
+      {
+        "name": "Raw Honey",
+        "description": "Local raw wildflower honey. 16oz jar.",
+        "price": 9.9
+      },
+      {
+        "name": "Farm Fresh Flower Bouquet",
+        "description": "Seasonal mixed flower bouquet.",
+        "price": 13.9
+      },
+      {
+        "name": "Mixed Lettuce Heads",
+        "description": "Assorted organic lettuce varieties. 3 heads.",
+        "price": 6.5
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Sunrise Organic Farm",
+    "description": "A small-scale organic farm specializing in berries and leafy greens.",
+    "location": "Santa Paula, CA",
+    "address": {
+      "street": "452 Sunrise Road",
+      "city": "Santa Paula",
+      "state": "CA",
+      "zipCode": "93060",
+      "coordinates": {
+        "latitude": 34.3542,
+        "longitude": -119.0593
+      }
+    },
+    "contact": {
+      "phone": "805-555-0557",
+      "email": "info@sunriseorganicfarm.com",
+      "website": "www.sunriseorganicfarm.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Spring", "Summer", "Fall"],
+      "opening_hours": {
+        "monday": "8:00-16:00",
+        "tuesday": "8:00-16:00",
+        "wednesday": "8:00-16:00",
+        "thursday": "8:00-16:00",
+        "friday": "8:00-16:00",
+        "saturday": "9:00-14:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Venmo"
+    ],
+    "established_year": 1998,
+    "size_acres": 50,
+    "specialties": [
+      "Mixed Berry Box",
+      "Baby Spinach",
+      "Fresh Mint Bundle"
+    ],
+    "deliveryFee": 1.2,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 35,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Mixed Berry Box",
+        "description": "Fresh picked raspberries, blackberries, and blueberries. 12oz box.",
+        "price": 8.9
+      },
+      {
+        "name": "Baby Spinach",
+        "description": "Tender organic baby spinach. 8oz bag.",
+        "price": 5.9
+      },
+      {
+        "name": "Fresh Mint Bundle",
+        "description": "Large bundle of fresh organic mint.",
+        "price": 3.9
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "description": "Sweet organic cherry tomatoes. 1 pint basket.",
+        "price": 6.5
+      },
+      {
+        "name": "Artichokes",
+        "description": "Large fresh artichokes. 4 count.",
+        "price": 7.9
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Coastal Valley Farm",
+    "description": "A coastal farm known for its premium produce and commitment to sustainability.",
+    "location": "Carpinteria, CA",
+    "address": {
+      "street": "789 Coastal Valley Drive",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zipCode": "93013",
+      "coordinates": {
+        "latitude": 34.3989,
+        "longitude": -119.5181
+      }
+    },
+    "contact": {
+      "phone": "805-555-0668",
+      "email": "info@coastalvalleyfarm.com",
+      "website": "www.coastalvalleyfarm.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "Sustainable Agriculture Certified"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Google Pay"
+    ],
+    "established_year": 2005,
+    "size_acres": 120,
+    "specialties": [
+      "Avocado Box",
+      "Meyer Lemons",
+      "Mixed Mushrooms"
+    ],
+    "deliveryFee": 1.1,
+    "minDeliveryTime": 25,
+    "maxDeliveryTime": 40,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Avocado Box",
+        "description": "Premium Hass avocados. 6 count box.",
+        "price": 12.9
+      },
+      {
+        "name": "Meyer Lemons",
+        "description": "Sweet Meyer lemons. 2lb bag.",
+        "price": 6.9
+      },
+      {
+        "name": "Fresh Basil",
+        "description": "Large bunch of organic basil.",
+        "price": 4.5
+      },
+      {
+        "name": "Mixed Mushrooms",
+        "description": "Assorted organic mushrooms. 8oz box.",
+        "price": 8.9
+      },
+      {
+        "name": "Green Beans",
+        "description": "Fresh organic green beans. 1lb bag.",
+        "price": 5.9
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Happy Valley Herbs",
+    "description": "A boutique herb farm offering a wide variety of culinary and medicinal herbs.",
+    "location": "Ojai, CA",
+    "address": {
+      "street": "123 Happy Valley Lane",
+      "city": "Ojai",
+      "state": "CA",
+      "zipCode": "93023",
+      "coordinates": {
+        "latitude": 34.4481,
+        "longitude": -119.2423
+      }
+    },
+    "contact": {
+      "phone": "805-555-0779",
+      "email": "info@happyvalleyherbs.com",
+      "website": "www.happyvalleyherbs.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "Herbal Quality Certified"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 2010,
+    "size_acres": 30,
+    "specialties": [
+      "Herb Garden Box",
+      "Lavender Bundle",
+      "Tea Herb Mix"
+    ],
+    "deliveryFee": 0.8,
+    "minDeliveryTime": 15,
+    "maxDeliveryTime": 30,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1570912355338-cdb934b76b12?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Herb Garden Box",
+        "description": "Mix of fresh organic culinary herbs. 6 varieties.",
+        "price": 14.9
+      },
+      {
+        "name": "Lavender Bundle",
+        "description": "Fresh cut lavender bunch.",
+        "price": 7.9
+      },
+      {
+        "name": "Sage Bundle",
+        "description": "Fresh organic sage bundle.",
+        "price": 4.9
+      },
+      {
+        "name": "Rosemary Plants",
+        "description": "Live rosemary plants in 4\" pots. 2 count.",
+        "price": 11.9
+      },
+      {
+        "name": "Tea Herb Mix",
+        "description": "Mixed herbs for tea making. 4oz package.",
+        "price": 9.9
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Rainbow Ridge Farms",
+    "description": "A vibrant farm known for its colorful produce and community events.",
+    "location": "Goleta, CA",
+    "address": {
+      "street": "456 Rainbow Ridge Road",
+      "city": "Goleta",
+      "state": "CA",
+      "zipCode": "93117",
+      "coordinates": {
+        "latitude": 34.4358,
+        "longitude": -119.8273
+      }
+    },
+    "contact": {
+      "phone": "805-555-0880",
+      "email": "info@rainbowridgefarms.com",
+      "website": "www.rainbowridgefarms.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Spring", "Summer", "Fall"],
+      "opening_hours": {
+        "monday": "8:00-16:00",
+        "tuesday": "8:00-16:00",
+        "wednesday": "8:00-16:00",
+        "thursday": "8:00-16:00",
+        "friday": "8:00-16:00",
+        "saturday": "9:00-14:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Venmo"
+    ],
+    "established_year": 2000,
+    "size_acres": 75,
+    "specialties": [
+      "Mixed Pepper Box",
+      "Rainbow Chard",
+      "Fresh Garlic"
+    ],
+    "deliveryFee": 1.3,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 35,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Mixed Pepper Box",
+        "description": "Assorted sweet and hot peppers. 2lb box.",
+        "price": 7.9
+      },
+      {
+        "name": "Rainbow Chard",
+        "description": "Colorful organic swiss chard bundle.",
+        "price": 4.9
+      },
+      {
+        "name": "Fresh Garlic",
+        "description": "Fresh organic garlic bulbs. 4 count.",
+        "price": 5.9
+      },
+      {
+        "name": "Baby Carrots",
+        "description": "Fresh organic baby carrots. 1lb bag.",
+        "price": 4.9
+      },
+      {
+        "name": "Mixed Root Vegetables",
+        "description": "Assorted organic root vegetables. 3lb bag.",
+        "price": 8.9
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Sunshine Citrus Grove",
+    "description": "A citrus grove offering a wide variety of fresh and specialty citrus fruits.",
+    "location": "Fillmore, CA",
+    "address": {
+      "street": "789 Sunshine Grove Lane",
+      "city": "Fillmore",
+      "state": "CA",
+      "zipCode": "93015",
+      "coordinates": {
+        "latitude": 34.3992,
+        "longitude": -118.9187
+      }
+    },
+    "contact": {
+      "phone": "805-555-0991",
+      "email": "info@sunshinecitrusgrove.com",
+      "website": "www.sunshinecitrusgrove.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 1985,
+    "size_acres": 100,
+    "specialties": [
+      "Orange Variety Box",
+      "Tangerine Bag",
+      "Specialty Citrus Mix"
+    ],
+    "deliveryFee": 1.0,
+    "minDeliveryTime": 25,
+    "maxDeliveryTime": 40,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1600697394936-59934aa5951f?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Orange Variety Box",
+        "description": "Mix of navel and valencia oranges. 5lb box.",
+        "price": 12.9
+      },
+      {
+        "name": "Tangerine Bag",
+        "description": "Sweet tangerines. 2lb bag.",
+        "price": 7.9
+      },
+      {
+        "name": "Specialty Citrus Mix",
+        "description": "Blood oranges and cara cara oranges. 3lb mix.",
+        "price": 9.9
+      },
+      {
+        "name": "Fresh Kumquats",
+        "description": "Sweet-tart kumquats. 8oz container.",
+        "price": 6.9
+      },
+      {
+        "name": "Citrus Honey",
+        "description": "Local orange blossom honey. 12oz jar.",
+        "price": 8.9
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Green Acres Family Farm",
+    "description": "A family-run farm offering fresh produce and a welcoming atmosphere.",
+    "location": "Somis, CA",
+    "address": {
+      "street": "234 Green Acres Lane",
+      "city": "Somis",
+      "state": "CA",
+      "zipCode": "93066",
+      "coordinates": {
+        "latitude": 34.2867,
+        "longitude": -119.0112
+      }
+    },
+    "contact": {
+      "phone": "805-555-0102",
+      "email": "info@greenacresfarm.com",
+      "website": "www.greenacresfarm.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Spring", "Summer", "Fall"],
+      "opening_hours": {
+        "monday": "8:00-16:00",
+        "tuesday": "8:00-16:00",
+        "wednesday": "8:00-16:00",
+        "thursday": "8:00-16:00",
+        "friday": "8:00-16:00",
+        "saturday": "9:00-14:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Venmo"
+    ],
+    "established_year": 1990,
+    "size_acres": 80,
+    "specialties": [
+      "Mixed Lettuce Box",
+      "Fresh Peas",
+      "Baby Potatoes"
+    ],
+    "deliveryFee": 1.2,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 35,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Mixed Lettuce Box",
+        "description": "Variety of fresh organic lettuce. 3 heads.",
+        "price": 7.9
+      },
+      {
+        "name": "Fresh Peas",
+        "description": "Sweet organic sugar snap peas. 12oz bag.",
+        "price": 5.9
+      },
+      {
+        "name": "Spring Onions",
+        "description": "Fresh spring onions with tops. 1lb bundle.",
+        "price": 4.9
+      },
+      {
+        "name": "Mixed Herbs",
+        "description": "Assorted fresh herbs. 3 bunches.",
+        "price": 6.9
+      },
+      {
+        "name": "Baby Potatoes",
+        "description": "Mixed variety baby potatoes. 2lb bag.",
+        "price": 5.9
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Valley View Berry Farm",
+    "description": "A berry farm offering premium berries and homemade jams.",
+    "location": "Santa Maria, CA",
+    "address": {
+      "street": "567 Valley View Road",
+      "city": "Santa Maria",
+      "state": "CA",
+      "zipCode": "93454",
+      "coordinates": {
+        "latitude": 34.9530,
+        "longitude": -120.4357
+      }
+    },
+    "contact": {
+      "phone": "805-555-0113",
+      "email": "info@valleyviewberryfarm.com",
+      "website": "www.valleyviewberryfarm.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Spring", "Summer", "Fall"],
+      "opening_hours": {
+        "monday": "8:00-16:00",
+        "tuesday": "8:00-16:00",
+        "wednesday": "8:00-16:00",
+        "thursday": "8:00-16:00",
+        "friday": "8:00-16:00",
+        "saturday": "9:00-14:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "Venmo"
+    ],
+    "established_year": 2005,
+    "size_acres": 60,
+    "specialties": [
+      "Premium Strawberries",
+      "Mixed Berries",
+      "Berry Jam"
+    ],
+    "deliveryFee": 1.5,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 45,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1589927986089-35812f4b735b?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Premium Strawberries",
+        "description": "Sweet organic strawberries. 2lb box.",
+        "price": 9.9
+      },
+      {
+        "name": "Mixed Berries",
+        "description": "Assorted fresh berries. 18oz box.",
+        "price": 12.9
+      },
+      {
+        "name": "Blackberries",
+        "description": "Fresh organic blackberries. 12oz box.",
+        "price": 7.9
+      },
+      {
+        "name": "Raspberry Box",
+        "description": "Fresh organic raspberries. 12oz box.",
+        "price": 8.9
+      },
+      {
+        "name": "Berry Jam",
+        "description": "Homemade mixed berry jam. 8oz jar.",
+        "price": 6.9
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Pacific Coast Orchards",
+    "description": "An orchard offering a variety of fresh fruits and homemade cider.",
+    "location": "Lompoc, CA",
+    "address": {
+      "street": "789 Pacific Coast Highway",
+      "city": "Lompoc",
+      "state": "CA",
+      "zipCode": "93436",
+      "coordinates": {
+        "latitude": 34.6392,
+        "longitude": -120.4579
+      }
+    },
+    "contact": {
+      "phone": "805-555-0124",
+      "email": "info@pacificcoastorchards.com",
+      "website": "www.pacificcoastorchards.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 1995,
+    "size_acres": 150,
+    "specialties": [
+      "Apple Variety Box",
+      "Fresh Pears",
+      "Apple Cider"
+    ],
+    "deliveryFee": 1.3,
+    "minDeliveryTime": 25,
+    "maxDeliveryTime": 40,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Apple Variety Box",
+        "description": "Mix of organic apple varieties. 4lb box.",
+        "price": 11.9
+      },
+      {
+        "name": "Fresh Pears",
+        "description": "Organic Bartlett pears. 3lb bag.",
+        "price": 8.9
+      },
+      {
+        "name": "Stone Fruit Mix",
+        "description": "Seasonal stone fruits. 3lb box.",
+        "price": 12.9
+      },
+      {
+        "name": "Fresh Figs",
+        "description": "Organic black mission figs. 1lb box.",
+        "price": 9.9
+      },
+      {
+        "name": "Apple Cider",
+        "description": "Fresh pressed apple cider. 32oz bottle.",
+        "price": 7.9
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Wildflower Meadows Farm",
+    "description": "A farm specializing in wildflower honey and fresh cut flowers.",
+    "location": "Buellton, CA",
+    "address": {
+      "street": "345 Wildflower Lane",
+      "city": "Buellton",
+      "state": "CA",
+      "zipCode": "93427",
+      "coordinates": {
+        "latitude": 34.6133,
+        "longitude": -120.1932
+      }
+    },
+    "contact": {
+      "phone": "805-555-0135",
+      "email": "info@wildflowermeadowsfarm.com",
+      "website": "www.wildflowermeadowsfarm.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 2000,
+    "size_acres": 40,
+    "specialties": [
+      "Wildflower Honey",
+      "Fresh Cut Flowers",
+      "Herb & Flower Tea"
+    ],
+    "deliveryFee": 1.1,
+    "minDeliveryTime": 20,
+    "maxDeliveryTime": 35,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Wildflower Honey",
+        "description": "Raw local wildflower honey. 16oz jar.",
+        "price": 12.9
+      },
+      {
+        "name": "Fresh Cut Flowers",
+        "description": "Mixed seasonal flower bouquet.",
+        "price": 15.9
+      },
+      {
+        "name": "Dried Flower Bundle",
+        "description": "Dried flower arrangement.",
+        "price": 18.9
+      },
+      {
+        "name": "Bee Pollen",
+        "description": "Fresh local bee pollen. 4oz jar.",
+        "price": 9.9
+      },
+      {
+        "name": "Herb & Flower Tea",
+        "description": "Dried herb and flower tea blend. 4oz bag.",
+        "price": 8.9
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Mountain View Mushrooms",
+    "description": "A farm specializing in gourmet and exotic mushrooms.",
+    "location": "Los Olivos, CA",
+    "address": {
+      "street": "678 Mountain View Road",
+      "city": "Los Olivos",
+      "state": "CA",
+      "zipCode": "93441",
+      "coordinates": {
+        "latitude": 34.6889,
+        "longitude": -120.1167
+      }
+    },
+    "contact": {
+      "phone": "805-555-0146",
+      "email": "info@mountainviewmushrooms.com",
+      "website": "www.mountainviewmushrooms.com"
+    },
+    "certifications": [
+      "USDA Organic",
+      "California Certified Organic Farmers"
+    ],
+    "growing_methods": [
+      "Organic",
+      "Sustainable"
+    ],
+    "season_info": {
+      "growing_seasons": ["Year-round"],
+      "opening_hours": {
+        "monday": "9:00-17:00",
+        "tuesday": "9:00-17:00",
+        "wednesday": "9:00-17:00",
+        "thursday": "9:00-17:00",
+        "friday": "9:00-17:00",
+        "saturday": "8:00-16:00",
+        "sunday": "Closed"
+      }
+    },
+    "payment_methods": [
+      "Cash",
+      "Credit Card",
+      "PayPal"
+    ],
+    "established_year": 2010,
+    "size_acres": 20,
+    "specialties": [
+      "Gourmet Mushroom Mix",
+      "Shiitake Mushrooms",
+      "Dried Mushroom Mix"
+    ],
+    "deliveryFee": 1.4,
+    "minDeliveryTime": 25,
+    "maxDeliveryTime": 40,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=1000&auto=format&fit=crop",
+    "produce": [
+      {
+        "name": "Gourmet Mushroom Mix",
+        "description": "Assorted organic mushrooms. 1lb box.",
+        "price": 14.9
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "description": "Fresh organic shiitake. 8oz container.",
+        "price": 9.9
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "description": "Fresh oyster mushrooms. 8oz container.",
+        "price": 8.9
+      },
+      {
+        "name": "Lion's Mane",
+        "description": "Fresh lion's mane mushrooms. 6oz container.",
+        "price": 11.9
+      },
+      {
+        "name": "Dried Mushroom Mix",
+        "description": "Assorted dried mushrooms. 4oz bag.",
+        "price": 12.9
+      }
+    ]
+  }
+]
