@@ -3,65 +3,69 @@ import { View, Text } from 'react-native';
 import { styles } from '../styles';
 
 const ProductDetails = ({ produce }) => {
+    if (!produce) {
+        return null;
+    }
+
+    const details = [
+        {
+            label: 'Available',
+            value: produce?.quantityAvailable,
+            show: !!produce?.quantityAvailable
+        },
+        {
+            label: 'Harvested',
+            value: produce?.harvestDate,
+            show: !!produce?.harvestDate
+        },
+        {
+            label: 'Picked On',
+            value: produce?.datePicked,
+            show: !!produce?.datePicked
+        },
+        {
+            label: 'Category',
+            value: produce?.category,
+            show: !!produce?.category
+        },
+        {
+            label: 'Type',
+            value: produce?.type,
+            show: !!produce?.type
+        },
+        {
+            label: 'Season',
+            value: produce?.seasonalWindow,
+            show: !!produce?.seasonalWindow
+        },
+        {
+            label: 'Storage',
+            value: produce?.storageInstructions,
+            show: !!produce?.storageInstructions
+        },
+        {
+            label: 'Farmer Notes',
+            value: produce?.farmerNotes,
+            show: !!produce?.farmerNotes
+        }
+    ];
+
+    const visibleDetails = details.filter(detail => detail.show);
+
+    if (visibleDetails.length === 0) {
+        return null;
+    }
+
     return (
         <View style={styles.detailsContainer}>
             <Text style={styles.sectionTitle}>Product Details</Text>
             <View style={styles.detailsGrid}>
-                {produce.quantityAvailable && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Available</Text>
-                        <Text style={styles.detailValue}>{produce.quantityAvailable}</Text>
+                {visibleDetails.map((detail, index) => (
+                    <View key={index} style={styles.detailItem}>
+                        <Text style={styles.detailLabel}>{detail.label}</Text>
+                        <Text style={styles.detailValue}>{detail.value}</Text>
                     </View>
-                )}
-                
-                {produce.harvestDate && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Harvested</Text>
-                        <Text style={styles.detailValue}>{produce.harvestDate}</Text>
-                    </View>
-                )}
-                
-                {produce.datePicked && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Picked On</Text>
-                        <Text style={styles.detailValue}>{produce.datePicked}</Text>
-                    </View>
-                )}
-                
-                {produce.category && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Category</Text>
-                        <Text style={styles.detailValue}>{produce.category}</Text>
-                    </View>
-                )}
-                
-                {produce.type && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Type</Text>
-                        <Text style={styles.detailValue}>{produce.type}</Text>
-                    </View>
-                )}
-                
-                {produce.seasonalWindow && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Season</Text>
-                        <Text style={styles.detailValue}>{produce.seasonalWindow}</Text>
-                    </View>
-                )}
-                
-                {produce.storageInstructions && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Storage</Text>
-                        <Text style={styles.detailValue}>{produce.storageInstructions}</Text>
-                    </View>
-                )}
-                
-                {produce.farmerNotes && (
-                    <View style={styles.detailItem}>
-                        <Text style={styles.detailLabel}>Farmer Notes</Text>
-                        <Text style={styles.detailValue}>{produce.farmerNotes}</Text>
-                    </View>
-                )}
+                ))}
             </View>
         </View>
     );

@@ -28,7 +28,9 @@ const CustomerReviews = ({ produce, showComments, toggleComments }) => {
         ]).start();
     }, [showComments]);
 
-    if (!produce.comments || produce.comments.length === 0) return null;
+    if (!produce?.comments || !Array.isArray(produce.comments) || produce.comments.length === 0) {
+        return null;
+    }
 
     const spin = animatedRotate.interpolate({
         inputRange: [0, 1],
@@ -70,13 +72,13 @@ const CustomerReviews = ({ produce, showComments, toggleComments }) => {
                     renderItem={({ item }) => (
                         <View style={styles.commentItem}>
                             <View style={styles.commentHeader}>
-                                <Text style={styles.commentUsername}>{item.username}</Text>
+                                <Text style={styles.commentUsername}>{item?.username || 'Anonymous'}</Text>
                                 <View style={styles.commentRatingDate}>
-                                    <Text style={styles.commentRating}>{'★'.repeat(item.rating)}</Text>
-                                    <Text style={styles.commentDate}>{item.date}</Text>
+                                    <Text style={styles.commentRating}>{'★'.repeat(item?.rating || 0)}</Text>
+                                    <Text style={styles.commentDate}>{item?.date || 'Unknown date'}</Text>
                                 </View>
                             </View>
-                            <Text style={styles.commentText}>{item.comment}</Text>
+                            <Text style={styles.commentText}>{item?.comment || 'No comment provided'}</Text>
                         </View>
                     )}
                 />

@@ -8,11 +8,20 @@ const FarmListItems = ({ produce }) => {
     return (
         <View style={styles.container}>
             <View style={styles.contentContainer}>
-                <View>
+                <View style={styles.textContainer}>
                     <Text style={styles.name}>{produce.name}</Text>
                     <Text style={styles.description} numberOfLines={2}>{produce.description}</Text>
                     <Text style={styles.price}>${produce.price}/{produce.unit}</Text>
                 </View>
+                {produce.icon && (
+                    <View style={styles.iconContainer}>
+                        <Image 
+                            source={produce.icon}
+                            style={styles.icon}
+                            resizeMode="contain"
+                        />
+                    </View>
+                )}
             </View>
             <View style={styles.imageContainer}>
                 <Image 
@@ -40,6 +49,24 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         elevation: 2,
     },
+    contentContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    textContainer: {
+        flex: 1,
+        marginRight: 8,
+    },
+    iconContainer: {
+        marginHorizontal: 8,
+        justifyContent: 'center',
+    },
+    icon: {
+        width: 24,
+        height: 24,
+    },
     imageContainer: {
         justifyContent: 'center',
         alignItems: 'center',
@@ -50,19 +77,10 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         marginLeft: 16,
     },
-    contentContainer: {
-        flex: 1,
-        justifyContent: 'space-between',
-    },
     name: {
         fontSize: 16,
         fontFamily: 'RobotoMedium',
         color: '#333',
-        marginBottom: 4,
-    },
-    type: {
-        fontSize: 14,
-        color: '#666',
         marginBottom: 4,
     },
     description: {

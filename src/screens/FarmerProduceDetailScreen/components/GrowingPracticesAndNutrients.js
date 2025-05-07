@@ -3,19 +3,25 @@ import { View, Text } from 'react-native';
 import { styles } from '../styles';
 
 const GrowingPracticesAndNutrients = ({ produce }) => {
-    if ((!produce.growingPractices || !produce.growingPractices.length) && 
-        (!produce.nutrients || !produce.nutrients.length)) {
+    if (!produce) {
+        return null;
+    }
+
+    const growingPractices = produce?.growingPractices || [];
+    const nutrients = produce?.nutrients || [];
+
+    if (growingPractices.length === 0 && nutrients.length === 0) {
         return null;
     }
 
     return (
         <View style={styles.practicesNutrientsContainer}>
             {/* Growing Practices */}
-            {produce.growingPractices && produce.growingPractices.length > 0 && (
+            {growingPractices.length > 0 && (
                 <View style={styles.infoHalfContainer}>
                     <Text style={styles.infoSectionTitle}>Growing Practices</Text>
                     <View style={styles.tagsContainerCompact}>
-                        {produce.growingPractices.map((practice, index) => (
+                        {growingPractices.map((practice, index) => (
                             <View key={index} style={styles.tagItemCompact}>
                                 <Text style={styles.tagTextCompact}>{practice}</Text>
                             </View>
@@ -25,11 +31,11 @@ const GrowingPracticesAndNutrients = ({ produce }) => {
             )}
 
             {/* Nutrients */}
-            {produce.nutrients && produce.nutrients.length > 0 && (
+            {nutrients.length > 0 && (
                 <View style={styles.infoHalfContainer}>
                     <Text style={styles.infoSectionTitle}>Nutrients</Text>
                     <View style={styles.tagsContainerCompact}>
-                        {produce.nutrients.map((nutrient, index) => (
+                        {nutrients.map((nutrient, index) => (
                             <View key={index} style={styles.tagItemCompact}>
                                 <Text style={styles.tagTextCompact}>{nutrient}</Text>
                             </View>

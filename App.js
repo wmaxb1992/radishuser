@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen';
 import { useCustomFonts } from './src/hooks/useFonts';
-import FarmerDetailPage from './src/screens/FarmerDetailScreen';
-import FarmerProduceDetailScreen from './src/screens/FarmerProduceDetailScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/navigation';
 
 export default function App() {
   const { fontsLoaded } = useCustomFonts();
@@ -13,10 +12,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <FarmerProduceDetailScreen />
+    <NavigationContainer>
+      <RootNavigator />
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
 

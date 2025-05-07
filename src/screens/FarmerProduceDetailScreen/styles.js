@@ -470,4 +470,14 @@ export const styles = StyleSheet.create({
         color: '#4CAF50',
         fontWeight: '600',
     },
+    titleWithIcon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 4,
+    },
+    produceIcon: {
+        width: 28,
+        height: 28,
+        marginRight: 8,
+    },
 });

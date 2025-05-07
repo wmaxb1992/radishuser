@@ -1,71 +1,478 @@
 [
   {
-     "id":"1",
-     "userID":"9b09b087-cf40-41f4-a375-8dc75843a8d1",
-     "status":"NEW",
-     "createdAt":"2022-04-16T18:56:21.890Z",
-     "updatedAt":"2022-04-16T18:56:21.890Z",
-     "orderRestaurantId":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-     "Restaurant":{
-        "id":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-        "name":"El Cabo Coffe Bar Tres De Mayo",
-        "image":"https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant1.jpeg",
-        "deliveryFee":0.039448871531492236,
-        "minDeliveryTime":10,
-        "maxDeliveryTime":44,
-        "rating":1.5095123177204128,
-        "address":"983 Lewis Rapids",
-        "lat":46.87190499528364,
-        "lng":28.54937769418778,
-        "createdAt":"2022-04-16T12:03:33.225Z",
-        "updatedAt":"2022-04-16T12:05:12.826Z",
-     }
+    "id": "SO0001",
+    "userID": "u123",
+    "status": "NEW",
+    "createdAt": "2025-05-07T10:30:00.000Z",
+    "updatedAt": "2025-05-07T10:30:00.000Z",
+    "deliveryType": "SCHEDULED",
+    "numberOfFarms": 3,
+    "payment": {
+      "method": "CREDIT_CARD",
+      "last4": "4321",
+      "status": "PAID",
+      "timestamp": "2025-05-07T10:31:00.000Z"
+    },
+    "deliveryAddress": {
+      "street": "742 Vineyard Lane",
+      "unit": "Suite 101",
+      "city": "Sonoma",
+      "state": "CA",
+      "zipCode": "95476",
+      "instructions": "Please leave at front desk with concierge"
+    },
+    "timeline": [
+      {
+        "status": "ORDERED",
+        "timestamp": "2025-05-07T10:30:00.000Z"
+      },
+      {
+        "status": "CONFIRMED",
+        "timestamp": "2025-05-07T10:31:00.000Z"
+      }
+    ],
+    "customer": {
+      "name": "Sarah Wilson",
+      "phone": "+14155557890",
+      "email": "sarah.w@example.com",
+      "preferredContact": "SMS"
+    },
+    "substitutionPreference": {
+      "allowed": true,
+      "instructions": "Organic substitutes only, similar price range"
+    },
+    "farms": [
+      {
+        "farmId": "1",
+        "name": "Green Valley Family Farms",
+        "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1",
+        "items": [
+          {
+            "id": "p1",
+            "name": "Pineberry Strawberry",
+            "quantity": 2,
+            "price": 8.99,
+            "unit": "pint",
+            "notes": "Please pick the ripest ones"
+          },
+          {
+            "id": "p2",
+            "name": "Heirloom Tomatoes",
+            "quantity": 3,
+            "price": 6.99,
+            "unit": "lb",
+            "notes": "Mix of different varieties please"
+          },
+          {
+            "id": "p3",
+            "name": "Baby Spring Mix",
+            "quantity": 2,
+            "price": 5.99,
+            "unit": "8oz",
+            "notes": "Organic greens preferred"
+          },
+          {
+            "id": "p4",
+            "name": "Purple Asparagus",
+            "quantity": 1,
+            "price": 8.99,
+            "unit": "lb",
+            "notes": "Tender stalks only"
+          }
+        ],
+        "subtotal": 52.93,
+        "deliveryFee": 2.50,
+        "deliveryZone": {
+          "id": "DZ01",
+          "name": "Sonoma Valley",
+          "deliveryWindow": {
+            "day": "Monday",
+            "time": "9:00 AM - 12:00 PM"
+          }
+        }
+      },
+      {
+        "farmId": "8",
+        "name": "Rainbow Ridge Farms",
+        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
+        "items": [
+          {
+            "name": "Mixed Pepper Box",
+            "quantity": 1,
+            "price": 7.90,
+            "unit": "2lb box",
+            "notes": "Prefer colorful variety"
+          },
+          {
+            "name": "Rainbow Chard",
+            "quantity": 2,
+            "price": 4.90,
+            "unit": "bundle",
+            "notes": "Fresh and crisp leaves"
+          },
+          {
+            "name": "Fresh Garlic",
+            "quantity": 1,
+            "price": 5.90,
+            "unit": "4 count",
+            "notes": "Large bulbs preferred"
+          },
+          {
+            "name": "Baby Carrots",
+            "quantity": 2,
+            "price": 4.90,
+            "unit": "1lb bag",
+            "notes": "With fresh tops"
+          }
+        ],
+        "subtotal": 33.30,
+        "deliveryFee": 1.30,
+        "deliveryZone": {
+          "id": "DZ01",
+          "name": "Sonoma Valley",
+          "deliveryWindow": {
+            "day": "Monday",
+            "time": "9:00 AM - 12:00 PM"
+          }
+        }
+      },
+      {
+        "farmId": "5",
+        "name": "Sunrise Organic Farm",
+        "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2",
+        "items": [
+          {
+            "name": "Mixed Berry Box",
+            "quantity": 1,
+            "price": 8.90,
+            "unit": "12oz box",
+            "notes": "Fresh picked morning harvest"
+          },
+          {
+            "name": "Baby Spinach",
+            "quantity": 2,
+            "price": 5.90,
+            "unit": "8oz bag",
+            "notes": "Tender leaves only"
+          },
+          {
+            "name": "Fresh Mint Bundle",
+            "quantity": 1,
+            "price": 3.90,
+            "unit": "bundle",
+            "notes": "Aromatic and fresh"
+          },
+          {
+            "name": "Cherry Tomatoes",
+            "quantity": 2,
+            "price": 6.50,
+            "unit": "pint",
+            "notes": "Sweet variety preferred"
+          }
+        ],
+        "subtotal": 37.60,
+        "deliveryFee": 1.20,
+        "deliveryZone": {
+          "id": "DZ01",
+          "name": "Sonoma Valley",
+          "deliveryWindow": {
+            "day": "Monday",
+            "time": "9:00 AM - 12:00 PM"
+          }
+        }
+      }
+    ],
+    "total": 128.83
   },
   {
-     "id":"2",
-     "userID":"9b09b087-cf40-41f4-a375-8dc75843a8d1",
-     "status":"NEW",
-     "createdAt":"2022-04-16T18:53:32.261Z",
-     "updatedAt":"2022-04-16T18:53:32.261Z",
-     "orderRestaurantId":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-     "Restaurant":{
-        "id":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-        "name":"Jacobs - DuBuque",
-        "image":"https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant1.jpeg",
-        "deliveryFee":0.039448871531492236,
-        "minDeliveryTime":10,
-        "maxDeliveryTime":44,
-        "rating":1.5095123177204128,
-        "address":"983 Lewis Rapids",
-        "lat":46.87190499528364,
-        "lng":28.54937769418778,
-        "createdAt":"2022-04-16T12:03:33.225Z",
-        "updatedAt":"2022-04-16T12:05:12.826Z",
-     }
+    "id": "SO0002",
+    "userID": "u123",
+    "status": "PREPARING",
+    "createdAt": "2025-05-07T09:15:00.000Z",
+    "updatedAt": "2025-05-07T09:15:00.000Z",
+    "deliveryType": "INSTANT",
+    "estimatedDeliveryTime": "2025-05-07T10:15:00.000Z",
+    "numberOfFarms": 2,
+    "payment": {
+      "method": "APPLE_PAY",
+      "status": "PAID",
+      "timestamp": "2025-05-07T09:16:00.000Z"
+    },
+    "deliveryAddress": {
+      "street": "123 Wine Country Road",
+      "unit": "Apt 305",
+      "city": "Napa",
+      "state": "CA",
+      "zipCode": "94559",
+      "instructions": "Gate code: #2580"
+    },
+    "timeline": [
+      {
+        "status": "ORDERED",
+        "timestamp": "2025-05-07T09:15:00.000Z"
+      },
+      {
+        "status": "CONFIRMED",
+        "timestamp": "2025-05-07T09:16:00.000Z"
+      },
+      {
+        "status": "PREPARING",
+        "timestamp": "2025-05-07T09:30:00.000Z"
+      }
+    ],
+    "customer": {
+      "name": "Michael Chen",
+      "phone": "+14155551234",
+      "email": "mchen@example.com",
+      "preferredContact": "EMAIL"
+    },
+    "substitutionPreference": {
+      "allowed": false,
+      "instructions": "No substitutions please"
+    },
+    "farms": [
+      {
+        "farmId": "2",
+        "name": "Sunflower Ridge Farm",
+        "image": "https://images.unsplash.com/photo-1500076656116-558758c991c1",
+        "items": [
+          {
+            "id": "s3",
+            "name": "Mara des Bois Strawberry",
+            "quantity": 3,
+            "price": 7.99,
+            "unit": "pint",
+            "notes": "Morning harvested preferred"
+          }
+        ],
+        "subtotal": 23.97,
+        "deliveryFee": 5.00,
+        "instantDeliveryFee": 2.00
+      },
+      {
+        "farmId": "3",
+        "name": "Underwood Family Farms",
+        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
+        "items": [
+          {
+            "name": "Sweet Corn",
+            "quantity": 2,
+            "price": 5.90,
+            "unit": "6 ears",
+            "notes": "Fresh picked please"
+          },
+          {
+            "name": "Farm Fresh Eggs",
+            "quantity": 1,
+            "price": 7.00,
+            "unit": "dozen"
+          }
+        ],
+        "subtotal": 18.80,
+        "deliveryFee": 4.00,
+        "instantDeliveryFee": 2.00
+      }
+    ],
+    "total": 55.77
   },
   {
-     "id":"3",
-     "userID":"9b09b087-cf40-41f4-a375-8dc75843a8d1",
-     "status":"NEW",
-     "createdAt":"2022-04-16T18:56:49.713Z",
-     "updatedAt":"2022-04-16T18:56:49.713Z",
-     "orderRestaurantId":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-     "_version":1,
-     "_lastChangedAt":1650135409734,
-     "_deleted":null,
-     "Restaurant":{
-        "id":"7d7965f7-1b33-4b8c-9bac-0c22bc905030",
-        "name":"Jacobs - DuBuque",
-        "image":"https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant1.jpeg",
-        "deliveryFee":0.039448871531492236,
-        "minDeliveryTime":10,
-        "maxDeliveryTime":44,
-        "rating":1.5095123177204128,
-        "address":"983 Lewis Rapids",
-        "lat":46.87190499528364,
-        "lng":28.54937769418778,
-        "createdAt":"2022-04-16T12:03:33.225Z",
-        "updatedAt":"2022-04-16T12:05:12.826Z",
-     }
+    "id": "SO0003",
+    "userID": "u123",
+    "status": "OUT_FOR_DELIVERY",
+    "createdAt": "2025-05-07T08:00:00.000Z",
+    "updatedAt": "2025-05-07T08:00:00.000Z",
+    "deliveryType": "SCHEDULED",
+    "numberOfFarms": 1,
+    "payment": {
+      "method": "CREDIT_CARD",
+      "last4": "7890",
+      "status": "PAID",
+      "timestamp": "2025-05-07T08:01:00.000Z"
+    },
+    "deliveryAddress": {
+      "street": "456 Valley View Drive",
+      "city": "Yountville",
+      "state": "CA",
+      "zipCode": "94599",
+      "instructions": "Please ring doorbell"
+    },
+    "timeline": [
+      {
+        "status": "ORDERED",
+        "timestamp": "2025-05-07T08:00:00.000Z"
+      },
+      {
+        "status": "CONFIRMED",
+        "timestamp": "2025-05-07T08:01:00.000Z"
+      },
+      {
+        "status": "PREPARING",
+        "timestamp": "2025-05-07T08:30:00.000Z"
+      },
+      {
+        "status": "OUT_FOR_DELIVERY",
+        "timestamp": "2025-05-07T09:00:00.000Z"
+      }
+    ],
+    "customer": {
+      "name": "Emily Johnson",
+      "phone": "+14155559999",
+      "email": "emily.j@example.com",
+      "preferredContact": "PHONE"
+    },
+    "substitutionPreference": {
+      "allowed": true,
+      "instructions": "Similar items only, no price increase over $2"
+    },
+    "farms": [
+      {
+        "farmId": "14",
+        "name": "Mountain View Mushrooms",
+        "image": "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5",
+        "items": [
+          {
+            "name": "Gourmet Mushroom Mix",
+            "quantity": 2,
+            "price": 14.90,
+            "unit": "lb",
+            "notes": "Mix of different varieties"
+          },
+          {
+            "name": "Shiitake Mushrooms",
+            "quantity": 1,
+            "price": 9.90,
+            "unit": "8oz",
+            "notes": "Firm caps preferred"
+          }
+        ],
+        "subtotal": 39.70,
+        "deliveryFee": 1.40,
+        "deliveryZone": {
+          "id": "DZ02",
+          "name": "Napa Valley",
+          "deliveryWindow": {
+            "day": "Wednesday",
+            "time": "9:00 AM - 12:00 PM"
+          }
+        }
+      }
+    ],
+    "total": 41.10
+  },
+  {
+    "id": "SO0004",
+    "userID": "u123",
+    "status": "DELIVERED",
+    "createdAt": "2025-05-06T14:30:00.000Z",
+    "updatedAt": "2025-05-06T16:45:00.000Z",
+    "deliveryType": "SCHEDULED",
+    "numberOfFarms": 2,
+    "payment": {
+      "method": "PAYPAL",
+      "status": "PAID",
+      "timestamp": "2025-05-06T14:31:00.000Z"
+    },
+    "deliveryAddress": {
+      "street": "889 Harvest Lane",
+      "unit": "Unit 12",
+      "city": "St. Helena",
+      "state": "CA",
+      "zipCode": "94574",
+      "instructions": "Leave by garage door"
+    },
+    "timeline": [
+      {
+        "status": "ORDERED",
+        "timestamp": "2025-05-06T14:30:00.000Z"
+      },
+      {
+        "status": "CONFIRMED",
+        "timestamp": "2025-05-06T14:31:00.000Z"
+      },
+      {
+        "status": "PREPARING",
+        "timestamp": "2025-05-06T15:00:00.000Z"
+      },
+      {
+        "status": "OUT_FOR_DELIVERY",
+        "timestamp": "2025-05-06T16:00:00.000Z"
+      },
+      {
+        "status": "DELIVERED",
+        "timestamp": "2025-05-06T16:45:00.000Z"
+      }
+    ],
+    "customer": {
+      "name": "David Martinez",
+      "phone": "+14155553333",
+      "email": "d.martinez@example.com",
+      "preferredContact": "SMS"
+    },
+    "substitutionPreference": {
+      "allowed": true,
+      "instructions": "Contact me before making any substitutions"
+    },
+    "farms": [
+      {
+        "farmId": "13",
+        "name": "Wildflower Meadows Farm",
+        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
+        "items": [
+          {
+            "name": "Wildflower Honey",
+            "quantity": 1,
+            "price": 12.90,
+            "unit": "16oz jar"
+          },
+          {
+            "name": "Fresh Cut Flowers",
+            "quantity": 1,
+            "price": 15.90,
+            "unit": "bouquet",
+            "notes": "Seasonal mix, no lilies please"
+          }
+        ],
+        "subtotal": 28.80,
+        "deliveryFee": 1.10,
+        "deliveryZone": {
+          "id": "DZ01",
+          "name": "Sonoma Valley",
+          "deliveryWindow": {
+            "day": "Tuesday",
+            "time": "2:00 PM - 5:00 PM"
+          }
+        }
+      },
+      {
+        "farmId": "9",
+        "name": "Sunshine Citrus Grove",
+        "image": "https://images.unsplash.com/photo-1600697394936-59934aa5951f",
+        "items": [
+          {
+            "name": "Orange Variety Box",
+            "quantity": 1,
+            "price": 12.90,
+            "unit": "5lb box"
+          },
+          {
+            "name": "Fresh Kumquats",
+            "quantity": 2,
+            "price": 6.90,
+            "unit": "8oz container"
+          }
+        ],
+        "subtotal": 26.70,
+        "deliveryFee": 1.00,
+        "deliveryZone": {
+          "id": "DZ01",
+          "name": "Sonoma Valley",
+          "deliveryWindow": {
+            "day": "Tuesday",
+            "time": "2:00 PM - 5:00 PM"
+          }
+        }
+      }
+    ],
+    "total": 57.60
   }
 ]

@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Animated } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { styles } from '../styles';
 
-const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price }) => {
+const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price, produce, onUpdatePrice }) => {
     const totalPrice = (price * quantity).toFixed(2);
     const buttonScale = new Animated.Value(1);
 
@@ -26,6 +26,7 @@ const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price })
         if (quantity < maxQuantity) {
             animateButton();
             onIncrement();
+            onUpdatePrice && onUpdatePrice(price * (quantity + 1));
         }
     };
 
@@ -33,6 +34,7 @@ const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price })
         if (quantity > 1) {
             animateButton();
             onDecrement();
+            onUpdatePrice && onUpdatePrice(price * (quantity - 1));
         }
     };
 
@@ -57,7 +59,7 @@ const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price })
                     
                     <View style={styles.cartStepperQuantityTextContainer}>
                         <Text style={styles.cartStepperQuantityText}>{quantity}</Text>
-                        <Text style={styles.cartStepperUnitText}>units</Text>
+                        <Text style={styles.cartStepperUnitText}>{produce.unit}</Text>
                     </View>
 
                     <TouchableOpacity 
@@ -100,3 +102,14 @@ const CartStepper = ({ quantity, onIncrement, onDecrement, maxQuantity, price })
 };
 
 export default CartStepper;
+
+/* Usage Example:
+<CartStepper
+    quantity={quantity}
+    onIncrement={handleIncrement}
+    onDecrement={handleDecrement}
+    maxQuantity={maxQuantity}
+    price={price}
+    produce={produce}
+    onUpdatePrice={handleUpdatePrice}
+/> */
