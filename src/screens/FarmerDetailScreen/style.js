@@ -88,4 +88,33 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 0,
         paddingBottom: 16,
     },
+    // New styles
+    filterContainer: {
+        marginVertical: 0,
+    },
+    filterScrollView: {
+        paddingVertical: 5,
+    },
+    filterButton: {
+        paddingHorizontal: 10,
+        paddingVertical: 3,
+        marginRight: 10,
+        borderRadius: 20,
+        backgroundColor: '#f5f5f5',
+        borderWidth: 1,
+        borderColor: '#e0e0e0',
+    },
+    filterButtonActive: {
+        backgroundColor: '#4CAF50',
+        borderColor: '#4CAF50',
+    },
+    filterText: {
+        fontSize: 14,
+        fontWeight: '500',
+        color: '#666',
+    },
+    filterTextActive: {
+        color: 'white',
+        fontWeight: '600',
+    },
 });

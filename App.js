@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, SafeAreaView, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import { useCustomFonts } from './src/hooks/useFonts';
 import FarmerDetailPage from './src/screens/FarmerDetailScreen';
-
+import FarmerProduceDetailScreen from './src/screens/FarmerProduceDetailScreen';
 
 export default function App() {
   const { fontsLoaded } = useCustomFonts();
@@ -13,21 +13,14 @@ export default function App() {
   }
 
   return (
-    
-      <View style={styles.container}>
-        <FarmerDetailPage />
-        <StatusBar style="auto" />
-      </View>
-   
+    <View style={styles.container}>
+      <FarmerProduceDetailScreen />
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#fff',
-    overflow: 'visible',
-  },
   container: {
     flex: 1,
     backgroundColor: '#fff',

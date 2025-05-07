@@ -1,17 +1,33 @@
 import { View, Text, Image } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { CertificationBadges } from "../../components/FarmCard/certifications";
+import FilterOptions from "./FilterOptions"; // Updated import
 import { styles } from './style';
-import farms from "../../../assets/data/farms.json";  // Add this import
 
-const farm = farms[0];
-
-export const Header = () => {
+export const Header = ({ farm, onFilterChange }) => {
+    if (!farm) return null;
+    
+    // Format the image URL properly for Unsplash
+    const imageUrl = farm.image ? 
+        `${farm.image}?q=80&w=1000&auto=format&fit=crop` : 
+        null;
+    
+    // Extract unique categories from farm produce
+    const categories = farm.produce 
+        ? [...new Set(farm.produce.map(item => item.category).filter(Boolean))] 
+        : [];
+    
     return (
         <View>
             <View style={styles.imageContainer}>
-                <Image source={{ uri: farm.image }} style={styles.image} />
-               
+                {imageUrl ? (
+                    <Image 
+                        source={{ uri: imageUrl }} 
+                        style={styles.image} 
+                        resizeMode="cover"
+                    />
+                ) : (
+                    <View style={[styles.image, { backgroundColor: '#f0f0f0' }]} />
+                )}
             </View>
             
             <View style={styles.infoContainer}>
@@ -33,7 +49,7 @@ export const Header = () => {
                 
                 <Text style={styles.description}>{farm.description}</Text>
                 
-                <Text style={styles.sectionTitle}>Products</Text>
+                <FilterOptions categories={categories} onFilterChange={onFilterChange} />
             </View>
         </View>
     );

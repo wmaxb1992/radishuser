@@ -4,7 +4,7 @@ import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 export const CERTIFICATION_BADGES = {
   'USDA Organic': {
-    icon: 'leaf',
+    icon: 'eco',
     type: MaterialIcons,
     color: '#6aa84f',
     label: 'USDA'

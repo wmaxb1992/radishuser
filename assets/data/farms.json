@@ -16,7 +16,23 @@
         "name": "Pineberry Strawberry",
         "category": "Fruit",
         "type": "Strawberry",
-        "image": "https://images.unsplash.com/photo-1543528176-61b239494933?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img1",
+            "uri": "https://images.unsplash.com/photo-1543528176-61b239494933?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img2",
+            "uri": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          },
+          {
+            "id": "img3",
+            "uri": "https://images.unsplash.com/photo-1587334207407-716ee047d3c7?q=80&w=1000&auto=format&fit=crop",
+            "type": "growing"
+          }
+        ],
         "price": 8.99,
         "unit": "pint",
         "description": "Unique white strawberry variety with red seeds, featuring a tropical pineapple-like flavor.",
@@ -26,14 +42,83 @@
         "seasonalWindow": "May-September",
         "quantityAvailable": 25,
         "storageInstructions": "Refrigerate immediately, best consumed within 5 days",
-        "farmerNotes": "Morning harvested at peak ripeness"
+        "farmerNotes": "Morning harvested at peak ripeness",
+        "rating": 4.7,
+        "likes": 124,
+        "commentCount": 16,
+        "growingPractices": [
+          "No Pesticides",
+          "Hand Picked",
+          "Sustainable Irrigation",
+          "Companion Planting"
+        ],
+        "nutrients": [
+          "Vitamin C",
+          "Manganese",
+          "Folate",
+          "Potassium",
+          "Antioxidants"
+        ],
+        "comments": [
+          {
+            "userId": "u123",
+            "username": "FarmFresh22",
+            "rating": 5,
+            "comment": "These are amazing! So sweet and uniquely flavored - definitely lives up to the pineapple taste description.",
+            "date": "2024-05-04"
+          },
+          {
+            "userId": "u456",
+            "username": "OrganicLover",
+            "rating": 4,
+            "comment": "Impressive berries, but they don't last long after purchase. Eat them quickly!",
+            "date": "2024-04-30"
+          },
+          {
+            "userId": "u789",
+            "username": "ChefMaria",
+            "rating": 5,
+            "comment": "Used these in a dessert for my restaurant and customers went wild! Will definitely order again.",
+            "date": "2024-04-28"
+          },
+          {
+            "userId": "u234",
+            "username": "HealthyEater77",
+            "rating": 5,
+            "comment": "So refreshing and different from regular strawberries. My kids love them!",
+            "date": "2024-04-25"
+          },
+          {
+            "userId": "u567",
+            "username": "LocalFoodFan",
+            "rating": 4,
+            "comment": "Great flavor, though a bit pricey. Worth it as an occasional treat.",
+            "date": "2024-04-22"
+          }
+        ]
       },
       {
         "id": "p2",
         "name": "Heirloom Tomatoes",
         "category": "Vegetable",
         "type": "Tomato",
-        "image": "https://images.unsplash.com/photo-1598512752271-33f913a5af13?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img4",
+            "uri": "https://images.unsplash.com/photo-1598512752271-33f913a5af13?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img5",
+            "uri": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          },
+          {
+            "id": "img6",
+            "uri": "https://images.unsplash.com/photo-1594057844287-b43c49c36c0a?q=80&w=1000&auto=format&fit=crop",
+            "type": "variety"
+          }
+        ],
         "price": 6.99,
         "unit": "lb",
         "description": "Mix of Cherokee Purple, Brandywine, and Green Zebra varieties.",
@@ -43,14 +128,64 @@
         "seasonalWindow": "June-September",
         "quantityAvailable": 30,
         "storageInstructions": "Store at room temperature, avoid refrigeration",
-        "farmerNotes": "Vine-ripened, hand-selected"
+        "farmerNotes": "Vine-ripened, hand-selected",
+        "rating": 4.9,
+        "likes": 208,
+        "commentCount": 24,
+        "growingPractices": [
+          "Heirloom Seeds",
+          "No GMO",
+          "Organic Compost",
+          "Drip Irrigation"
+        ],
+        "nutrients": [
+          "Lycopene",
+          "Vitamin C",
+          "Potassium",
+          "Vitamin K",
+          "Folate"
+        ],
+        "comments": [
+          {
+            "userId": "u123",
+            "username": "TomatoLover",
+            "rating": 5,
+            "comment": "Best tomatoes I've ever tasted! The Cherokee Purple has such a rich, sweet flavor.",
+            "date": "2024-05-03"
+          },
+          {
+            "userId": "u456",
+            "username": "HomeChef42",
+            "rating": 5,
+            "comment": "Made the most amazing Caprese salad with these. The flavor is incomparable to grocery store tomatoes.",
+            "date": "2024-05-01"
+          },
+          {
+            "userId": "u789",
+            "username": "GardenGuru",
+            "rating": 4,
+            "comment": "Love the variety in the mix. Some were slightly overripe but still delicious.",
+            "date": "2024-04-29"
+          }
+        ]
       },
       {
         "id": "p3",
         "name": "Rainbow Swiss Chard",
         "category": "Leafy Greens",
         "type": "Chard",
-        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img7",
+            "uri": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img8",
+            "uri": "https://images.unsplash.com/photo-1587334207407-716ee047d3c7?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          }
+        ],
         "price": 4.99,
         "unit": "bunch",
         "description": "Vibrant stems in yellow, pink, and red with tender dark green leaves.",
@@ -60,14 +195,65 @@
         "seasonalWindow": "Year-round",
         "quantityAvailable": 15,
         "storageInstructions": "Store in plastic bag in crisper drawer",
-        "farmerNotes": "Fresh cut this morning"
+        "farmerNotes": "Fresh cut this morning",
+        "rating": 4.6,
+        "likes": 89,
+        "commentCount": 11,
+        "growingPractices": [
+          "Cover Cropping",
+          "Natural Pest Control",
+          "No Synthetic Fertilizers",
+          "Water Conservation"
+        ],
+        "nutrients": [
+          "Vitamin K",
+          "Vitamin A",
+          "Vitamin C",
+          "Magnesium",
+          "Iron",
+          "Potassium"
+        ],
+        "comments": [
+          {
+            "userId": "u234",
+            "username": "VeggieQueen",
+            "rating": 5,
+            "comment": "So colorful and fresh! Makes my meals look amazing and taste even better.",
+            "date": "2024-05-02"
+          },
+          {
+            "userId": "u567",
+            "username": "NutritionNerd",
+            "rating": 4,
+            "comment": "Great source of nutrients and stays fresh for days. I sauté it with garlic and olive oil - delicious!",
+            "date": "2024-04-30"
+          },
+          {
+            "userId": "u890",
+            "username": "PlantBasedPro",
+            "rating": 5,
+            "comment": "This rainbow chard is exceptional - tender leaves and crisp stems. Perfect in smoothies or sautéed.",
+            "date": "2024-04-26"
+          }
+        ]
       },
       {
         "id": "p4",
         "name": "Purple Asparagus",
         "category": "Vegetable",
         "type": "Asparagus",
-        "image": "https://images.unsplash.com/photo-1551629000-80f13ce76da7?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img9",
+            "uri": "https://images.unsplash.com/photo-1551629000-80f13ce76da7?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img10",
+            "uri": "https://images.unsplash.com/photo-1587334207407-716ee047d3c7?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          }
+        ],
         "price": 7.99,
         "unit": "bunch",
         "description": "Tender purple asparagus spears with a sweet, nutty flavor.",
@@ -84,7 +270,18 @@
         "name": "Organic Mixed Salad Greens",
         "category": "Leafy Greens",
         "type": "Mixed Greens",
-        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img11",
+            "uri": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img12",
+            "uri": "https://images.unsplash.com/photo-1587334207407-716ee047d3c7?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          }
+        ],
         "price": 5.99,
         "unit": "bag",
         "description": "Fresh mix of baby lettuce, arugula, and spinach.",
@@ -101,7 +298,18 @@
         "name": "Watermelon Radishes",
         "category": "Root Vegetable",
         "type": "Radish",
-        "image": "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=1000&auto=format&fit=crop",
+        "images": [
+          {
+            "id": "img13",
+            "uri": "https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=1000&auto=format&fit=crop",
+            "type": "primary"
+          },
+          {
+            "id": "img14",
+            "uri": "https://images.unsplash.com/photo-1587334207407-716ee047d3c7?q=80&w=1000&auto=format&fit=crop",
+            "type": "detail"
+          }
+        ],
         "price": 4.49,
         "unit": "bunch",
         "description": "Beautiful pink interior with crisp, mild flavor.",
@@ -119,7 +327,13 @@
         "description": "Vibrant, multicolored stems with tender dark green leaves. Perfect for sautéing or adding to soups.",
         "price": 3.99,
         "unit": "bunch",
-        "image": "https://example.com/swiss-chard.jpg"
+        "images": [
+          {
+            "id": "img15",
+            "uri": "https://example.com/swiss-chard.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p12",
@@ -127,7 +341,13 @@
         "description": "Sweet and crisp peppers with a beautiful purple hue. Rich in antioxidants.",
         "price": 4.50,
         "unit": "lb",
-        "image": "https://example.com/purple-pepper.jpg"
+        "images": [
+          {
+            "id": "img16",
+            "uri": "https://example.com/purple-pepper.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p13",
@@ -135,7 +355,13 @@
         "description": "Stunning fractal-patterned vegetable with a nutty, delicate flavor.",
         "price": 5.99,
         "unit": "head",
-        "image": "https://example.com/romanesco.jpg"
+        "images": [
+          {
+            "id": "img17",
+            "uri": "https://example.com/romanesco.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p14",
@@ -143,7 +369,13 @@
         "description": "Sweet and earthy golden beets, perfect for roasting or salads.",
         "price": 3.99,
         "unit": "bunch",
-        "image": "https://example.com/golden-beets.jpg"
+        "images": [
+          {
+            "id": "img18",
+            "uri": "https://example.com/golden-beets.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p15",
@@ -151,7 +383,13 @@
         "description": "Also known as Dinosaur Kale, these dark leaves are perfect for kale chips or salads.",
         "price": 2.99,
         "unit": "bunch",
-        "image": "https://example.com/lacinato-kale.jpg"
+        "images": [
+          {
+            "id": "img19",
+            "uri": "https://example.com/lacinato-kale.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p16",
@@ -159,7 +397,13 @@
         "description": "Beautiful pink interior with a mild, peppery flavor. Great for salads and garnishes.",
         "price": 4.99,
         "unit": "lb",
-        "image": "https://example.com/watermelon-radish.jpg"
+        "images": [
+          {
+            "id": "img20",
+            "uri": "https://example.com/watermelon-radish.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p17",
@@ -167,7 +411,13 @@
         "description": "Tender purple spears with a sweeter flavor than green asparagus.",
         "price": 6.99,
         "unit": "bunch",
-        "image": "https://example.com/purple-asparagus.jpg"
+        "images": [
+          {
+            "id": "img21",
+            "uri": "https://example.com/purple-asparagus.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p18",
@@ -175,7 +425,13 @@
         "description": "Colorful mix of pink, purple, and white radishes with a crisp, peppery taste.",
         "price": 2.99,
         "unit": "bunch",
-        "image": "https://example.com/easter-egg-radish.jpg"
+        "images": [
+          {
+            "id": "img22",
+            "uri": "https://example.com/easter-egg-radish.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p19",
@@ -183,7 +439,13 @@
         "description": "Curly green garlic shoots with a mild, fresh garlic flavor.",
         "price": 3.50,
         "unit": "bunch",
-        "image": "https://example.com/garlic-scapes.jpg"
+        "images": [
+          {
+            "id": "img23",
+            "uri": "https://example.com/garlic-scapes.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p20",
@@ -191,7 +453,13 @@
         "description": "Flying saucer-shaped summer squash with a tender texture.",
         "price": 3.99,
         "unit": "lb",
-        "image": "https://example.com/patty-pan.jpg"
+        "images": [
+          {
+            "id": "img24",
+            "uri": "https://example.com/patty-pan.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p21",
@@ -199,7 +467,13 @@
         "description": "Long, slender eggplants with tender flesh and few seeds.",
         "price": 4.50,
         "unit": "lb",
-        "image": "https://example.com/japanese-eggplant.jpg"
+        "images": [
+          {
+            "id": "img25",
+            "uri": "https://example.com/japanese-eggplant.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p22",
@@ -207,7 +481,13 @@
         "description": "Also known as Jerusalem artichokes, these knobby tubers have a nutty flavor.",
         "price": 5.99,
         "unit": "lb",
-        "image": "https://example.com/sunchokes.jpg"
+        "images": [
+          {
+            "id": "img26",
+            "uri": "https://example.com/sunchokes.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p23",
@@ -215,7 +495,13 @@
         "description": "Purple-skinned bulbs with crisp, sweet flesh. Great raw or cooked.",
         "price": 3.99,
         "unit": "lb",
-        "image": "https://example.com/kohlrabi.jpg"
+        "images": [
+          {
+            "id": "img27",
+            "uri": "https://example.com/kohlrabi.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p24",
@@ -223,7 +509,13 @@
         "description": "Sweet Japanese turnips that can be eaten raw or cooked.",
         "price": 4.50,
         "unit": "bunch",
-        "image": "https://example.com/hakurei-turnips.jpg"
+        "images": [
+          {
+            "id": "img28",
+            "uri": "https://example.com/hakurei-turnips.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p25",
@@ -231,7 +523,13 @@
         "description": "Green husked fruits perfect for salsa verde and Mexican dishes.",
         "price": 3.99,
         "unit": "lb",
-        "image": "https://example.com/tomatillos.jpg"
+        "images": [
+          {
+            "id": "img29",
+            "uri": "https://example.com/tomatillos.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p26",
@@ -239,7 +537,13 @@
         "description": "Nutrient-rich bitter greens, excellent for salads and sautéing.",
         "price": 2.99,
         "unit": "bunch",
-        "image": "https://example.com/dandelion-greens.jpg"
+        "images": [
+          {
+            "id": "img30",
+            "uri": "https://example.com/dandelion-greens.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p27",
@@ -247,7 +551,13 @@
         "description": "Round, yellow cucumbers with a mild, sweet flavor.",
         "price": 3.99,
         "unit": "lb",
-        "image": "https://example.com/lemon-cucumber.jpg"
+        "images": [
+          {
+            "id": "img31",
+            "uri": "https://example.com/lemon-cucumber.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p28",
@@ -255,7 +565,13 @@
         "description": "Beautiful purple string beans that turn green when cooked.",
         "price": 4.99,
         "unit": "lb",
-        "image": "https://example.com/purple-beans.jpg"
+        "images": [
+          {
+            "id": "img32",
+            "uri": "https://example.com/purple-beans.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p29",
@@ -263,7 +579,13 @@
         "description": "Knobby root vegetable with a delicate celery flavor.",
         "price": 4.50,
         "unit": "lb",
-        "image": "https://example.com/celeriac.jpg"
+        "images": [
+          {
+            "id": "img33",
+            "uri": "https://example.com/celeriac.jpg",
+            "type": "primary"
+          }
+        ]
       },
       {
         "id": "p30",
@@ -271,7 +593,13 @@
         "description": "Tender kale variety with purple stems and grey-green leaves.",
         "price": 2.99,
         "unit": "bunch",
-        "image": "https://example.com/red-russian-kale.jpg"
+        "images": [
+          {
+            "id": "img34",
+            "uri": "https://example.com/red-russian-kale.jpg",
+            "type": "primary"
+          }
+        ]
       }
     ]
   },
