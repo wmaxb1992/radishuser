@@ -5,7 +5,7 @@ import orders from "../../../assets/data/orders.json";
 
 const OrderScreen = () => {
     return (
-      <View style={{ flex: 1, width: '100%', paddingTop: 20, backgroundColor: '#fff' }}>
+      <View style={styles.container}>
           <FlatList
               data={orders}
               renderItem={({ item }) => <OrderListItem order={item} />}
@@ -14,14 +14,15 @@ const OrderScreen = () => {
                   <Text style={styles.emptyText}>No orders found</Text>
               )}
           />
-        </View>
+      </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        paddingTop: 20,
     },
     headerContainer: {
         padding: 15,

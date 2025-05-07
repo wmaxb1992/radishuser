@@ -1,12 +1,14 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
-
+import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 const FarmListItems = ({ produce }) => {
     if (!produce) {
         return null;
     }
 
+    const navigation = useNavigation();
+
     return (
-        <View style={styles.container}>
+        <Pressable onPress={() => navigation.navigate('FarmerProduceDetail', { id: produce.id })} style={styles.container}>
             <View style={styles.contentContainer}>
                 <View style={styles.textContainer}>
                     <Text style={styles.name}>{produce.name}</Text>
@@ -29,7 +31,7 @@ const FarmListItems = ({ produce }) => {
                     style={styles.image}
                 />
             </View>
-        </View>
+        </Pressable>
     );
 };
 

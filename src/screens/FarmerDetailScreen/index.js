@@ -4,11 +4,17 @@ import farms from "../../../assets/data/farms.json";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import FarmListItems from "../../components/FarmListItems";
 import { Header } from "./header";
-import { styles } from './style';
+import { styles } from './style'
+import { useRoute, useNavigation } from "@react-navigation/native";
 
 const farm = farms[0];
 
 const FarmerDetailPage = () => {
+
+    const route = useRoute();
+    const id = route.params.id;
+    const navigation = useNavigation();
+
     const [filteredProduce, setFilteredProduce] = useState(farm.produce);
     
     const handleFilterChange = useCallback((category) => {
@@ -34,7 +40,12 @@ const FarmerDetailPage = () => {
                 contentContainerStyle={styles.productsContainer}
             />
             <View style={styles.iconContainer}>
-                <MaterialCommunityIcons name="arrow-left-bold-circle" size={44} color="white" />
+                <MaterialCommunityIcons
+                    onPress={() => navigation.goBack()}
+                    name="arrow-left-bold-circle"
+                    size={44}
+                    color="white"
+                />
             </View>
         </View>
     );

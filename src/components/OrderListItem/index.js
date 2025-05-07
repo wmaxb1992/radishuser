@@ -1,7 +1,10 @@
 import { View, Text, Image, Pressable } from "react-native";
 import styles from './styles';
+import { useNavigation } from "@react-navigation/native";
 
 const OrderListItem = ({ order }) => {
+    const navigation = useNavigation();
+
     const getStatusColor = (status) => {
         switch (status) {
             case 'NEW':
@@ -29,10 +32,10 @@ const OrderListItem = ({ order }) => {
             label: farm.deliveryZone?.name,
             time: `${farm.deliveryZone?.deliveryWindow?.day}, ${farm.deliveryZone?.deliveryWindow?.time}`
         };
-    };
+    }; 
 
     return (
-        <Pressable style={styles.container}>
+        <Pressable onPress={() => navigation.navigate('OrderDetails', { id: order.id })} style={styles.container}>
             <View style={styles.header}>
                 <View style={styles.statusBar}>
                     <Text style={styles.deliveryType}>
